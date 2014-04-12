@@ -1,0 +1,16 @@
+{
+  "packages": {
+    "iron-router": {},
+    "handlebars-server": {},
+    "collection-hooks": {},
+    "sitemaps": {},
+    "bootstrap-3": {},
+    "fast-render": {},
+    "ms-seo": {
+      "git": "https://github.com/guilhermedecampo/ms-seo.git",
+      "branch": "master"
+    },
+    "roles": {},
+    "moment-with-langs": {}
+  }
+}
