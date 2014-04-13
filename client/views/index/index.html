@@ -50,23 +50,14 @@
           <!-- <h2>For events</h2> -->
           <h2> Eventos passados</h2>
           <!-- each pelos eventos -->
+          {{#each eventsLanding}}
           <div class="col-sm-4">
             <i class="features features-instant"></i>
-            <h4>evento.nome</h4>
-            <p>evento.descricao</p>
+            <img src="images/{{linkong}}.png" alt="">
+            <h4>{{title}}</h4>
+            <p>{{sub description}}</p>
           </div>
-
-          <div class="col-sm-4">
-            <i class="features features-instant"></i>
-            <h4>evento.nome</h4>
-            <p>evento.descricao</p>
-          </div>
-
-          <div class="col-sm-4">
-            <i class="features features-instant"></i>
-            <h4>evento.nome</h4>
-            <p>evento.descricao</p>
-          </div>
+          {{/each}}
         </div>
       </div>
     </div>

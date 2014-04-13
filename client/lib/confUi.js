@@ -18,3 +18,14 @@ UI.registerHelper('clean', function(val) {
   return val.replace(/ /g, "");
 
 });
+
+UI.registerHelper('sub', function(val) {
+  return val.substring(0,200);
+
+});
+
+UI.registerHelper('fromNow', function(val) {
+  moment.lang('pt-br');
+  return moment(val).fromNow();
+
+});
