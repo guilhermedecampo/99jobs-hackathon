@@ -1082,6 +1082,7 @@ a.thumbnail{
 
 .section-green{
 	height:100%;
+	background-color:#3EFABC;
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:first-child{
@@ -1091,3 +1092,4 @@ a.thumbnail{
 .goCadastro{
 	color:black;
 }
+

@@ -17,7 +17,6 @@ Template['main'].helpers({
 
 Template['vaiGente'].events({
   'click #vaiGente': function (event, template) {
-    console.log('casdfasd');
     Session.set('numberCredits', 1);
   },
   'click .cbp_tmtimeline': function (event, template) {
