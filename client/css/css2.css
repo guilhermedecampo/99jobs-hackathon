@@ -462,8 +462,8 @@ section.partners{
     }
 
 section.how{
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
   section.how h2{
@@ -864,4 +864,9 @@ section.footer{
     background-image: url('../images/y-combinator-logo@2x.png');
     background-size: 155px 30px;
   }
+}
+
+.profile-menu{
+  height:100%;
+  background-color:#08FCBE;
 }
