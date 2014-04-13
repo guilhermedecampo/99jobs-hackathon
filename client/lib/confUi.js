@@ -1,4 +1,5 @@
-
+Meteor.subscribe('events');
+Meteor.subscribe('users');
 
 //Divide x / y
 
@@ -11,7 +12,7 @@ UI.registerHelper('picFacebook', function(facebookId) {
   }
 });
 
-Meteor.subscribe('events');
+
 
 
 UI.registerHelper('clean', function(val) {
@@ -25,7 +26,8 @@ UI.registerHelper('sub', function(val) {
 });
 
 UI.registerHelper('fromNow', function(val) {
-  return moment(val).fromNow();
+
+  return moment(val).lang('pt-br').fromNow();
 
 });
 

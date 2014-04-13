@@ -1,12 +1,16 @@
-Template.main.rendered = function () {
-  return moment().lang('pt-br');
+moment.lang('pt-br');
+
+Template.insideMain.rendered = function () {
+  console.log('moment?');
+  moment.lang('pt-br');
 };
 
 Template['main'].helpers({
   user:function () {
-    return Meteor.users.find();
+    return Meteor.users.find({_id:Meteor.userId()});
   },
   events:function () {
+    console.log('moment?');
     moment.lang('pt-br');
     return Events.find();
   },
