@@ -53,12 +53,33 @@ h1, h2, h3{
   box-shadow:0px 3px 5px rgba(0,0,0, 0.5);
 }
 
+.navbar .login-buttons-dropdown-align-{
+  margin: 0 3px;
+  border-radius: 2px;
+  position: relative;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+
+.navbar .login-buttons-dropdown-align-:hover{
+  background-color:#272727;
+}
+
   a.navbar-brand{
-    background: url('../images/boostable-logo-w.png');
     display: block;
     height: 38px;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 5px;
     width: 155px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+
+  a.navbar-brand:hover{
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   }
 
 body.home .navbar-default{
@@ -67,6 +88,16 @@ body.home .navbar-default{
 
 .navbar-nav>li>a {
   line-height: 21px;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+
+}
+
+.navbar-nav>li>a:hover {
+  background-color:#F95600 !important;
 }
 
 @media (min-width: 768px){
@@ -900,8 +931,6 @@ h3.profile{
   border:solid 1px #3EFABC;
   color: #FFF;
   font-size: 2em;
-  padding-left: 30px;
-  padding-right: 30px;
   text-transform: uppercase;
   border-radius: 2px;
   cursor: pointer;
@@ -910,6 +939,10 @@ h3.profile{
   -ms-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
+}
+
+#login-buttons-logout{
+  font-size:1em;
 }
 
 .login-button:hover{
@@ -967,4 +1000,8 @@ h3.profile{
   .profile-menu{
     display:none;
   }
+}
+
+.margin-nav{
+  padding-top:100px;
 }
