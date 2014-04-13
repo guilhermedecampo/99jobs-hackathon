@@ -1,4 +1,6 @@
-moment.lang('pt-br');
+Template.main.rendered = function () {
+  Session.set('numberCredits', '0');
+};
 
 Template.insideMain.rendered = function () {
   console.log('moment?');
@@ -14,9 +16,15 @@ Template['main'].helpers({
     moment.lang('pt-br');
     return Events.find();
   },
+  number: function() {
+    return Session.get('numberCredits');
+  }
 
 });
 
 Template['main'].events({
+  'click asdf': function(event, template) {
+    Session.set('numberCredits', '1');
+  },
 });
 
