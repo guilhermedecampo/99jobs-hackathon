@@ -9,6 +9,9 @@ fast-render
 ms-seo
 roles
 moment-with-langs
+<<<<<<< HEAD
+/fast-render
+=======
 /iron-router
 /handlebars-server
 /collection-hooks
@@ -20,3 +23,4 @@ moment-with-langs
 /moment-with-langs
 /blaze-layout
 /robots-txt
+>>>>>>> eac73b1905dbe57dea6f021a6b5387cb025c05f0
