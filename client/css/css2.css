@@ -360,7 +360,7 @@ header.header {
 }
 
 div.welcome{
-  background: url('/images/welcome.jpg') no-repeat;
+  background: url('/images/menina gente boa2.png') no-repeat;
   color: #FFF;
   min-height: 100%;
   height:100%;
@@ -1076,4 +1076,10 @@ a.thumbnail{
 .cbp_tmicon img{
 	max-height:40px;
 	width:40px;
+	height:100%;
+}
+
+
+.section-green{
+	height:100%;
 }
