@@ -1,94 +1,79 @@
 <template name="main">
+  <section class="partners" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="list-inline text-center partners">
+            <li>Our partners include</li>
+            <li><a href="#"><i class="partners partners-etsy"><span>Etsy</span></i></a></li>
+            <li><a href="#"><i class="partners partners-opensky"><span>Open Sky</span></i></a></li>
+            <li><a href="#"><i class="partners partners-storenvy"><span>Store Envy</span></i></a></li>
+            <li><a href="#"><i class="partners partners-udemy"><span>Udemy</span></i></a></li>
+            <li><a href="#events">Add your events</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="profile">
-  	<div class="row full">
-	  	<div class="col-sm-2 profile-menu">
-	  		<div class="row">
-	  			<div class="col-sm-12 profile-picture">
-	  				<img src="images/profile-photo.jpg" alt="{{nome}}" class="img-circle img-responsive">
-	  			</div>
-	  			<div class="col-sm-12 text-center profile-description">
-	  				<h1>Fulano de tal</h1>
-	  				<h3><small>Créditos do bem:</small> 0</h3>
-	  			</div>
-	  			<div class="col-sm-12 text-center">
-	  				<hr>
-	  				<h4 class="profile">Minhas ONGs</h4>
-	  				<br>
-	  				<div class="row ong">
-	  					<span class="col-sm-2 foto">
-	  						<img src="images/ong.png" alt="{{nome}}" class="img-circle img-responsive">
-	  					</span>
-	  					<span class="col-sm-10 text-left nome">
-	  						ONG só amor
-	  					</span>
-	  				</div>
-	  			</div>
-	  		</div>
-		</div>
-		<div class="col-sm-8 timeline">
-			<div class="container">
-				<div class="row list-group list-unstyled events-list">
-					<div class="col-sm-12 list-group-item timeline-event">
-						<h4 class="list-group-item-heading">
-							<div class="row">
-			  					<span class="col-sm-1 foto">
-			  						<img src="images/ong.png" alt="{{nome}}" class="img-circle img-responsive">
-			  					</span>
-			  					<span class="col-sm-11 text-left nome">
-			  						ONG só amor
-			  						<br>
-			  						<small>
-			  							Adicionou um novo evento a 4 horas
-			  						</small>
-			  					</span>
-			  				</div>
-						</h4>
-						<div class="list-group-item-text">
-							<div class="row">
-								<div class="col-sm-11 col-sm-offset-1">
-									<h3>Almoço beneficiente de dias da criança no orfanato</h3>
-								</div>
-								<div class="col-sm-12 text-center">
-									<a href="#">Mais detalhes...</a>
-								</div>
+    {{#each user}}
+  	<div class="col-sm-2 profile-menu">
+  		<div class="row">
+  			<div class="col-sm-12 profile-picture">
+  				<img src="{{picFacebook profile.id}}" alt="{{nome}}" class="img-circle img-responsive">
+  			</div>
+  			<div class="col-sm-12 text-center profile-description">
+  				<h1>{{profile.name}}</h1>
+  			</div>
+  			<div class="col-sm-12 text-center">
+  				<hr>
+          <h3><small>Créditos do bem:</small> 0</h3>
+  				<h4 class="profile">ONGs que eu curto</h4>
+  				<br>
+  				<div class="row ong">
+  					<span class="col-sm-2 foto">
+  						<img src="images/ong.png" alt="{{nome}}" class="img-circle img-responsive">
+  					</span>
+  					<span class="col-sm-10 text-left nome">
+  						ONG só amor
+  					</span>
+  				</div>
+  			</div>
+  		</div>
+	   </div>
+    {{/each}}
+	<div class="col-sm-9 timeline">
+		<div class="container">
+			<div class="row list-group list-unstyled events-list">
+      {{#each events}}
+				<div class="col-sm-12 list-group-item timeline-event">
+					<h4 class="list-group-item-heading">
+						<div class="row">
+		  					<span class="col-sm-1 foto">
+		  						<img src="images/{{linkong}}.png" alt="{{nome}}" class="img-circle img-responsive">
+		  					</span>
+		  					<span class="col-sm-11 text-left nome">
+		  						{{ong}}
+		  						<br>
+		  						<small>
+		  							Adicionou {{type}} {{data}}
+		  						</small>
+		  					</span>
+		  				</div>
+					</h4>
+					<div class="list-group-item-text">
+						<div class="row">
+							<div class="col-sm-11 col-sm-offset-1">
+								<h3>{{title}}</h3>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-12 list-group-item timeline-event">
-						<h4 class="list-group-item-heading">
-							<div class="row">
-			  					<span class="col-sm-1 foto">
-			  						<img src="images/ong.png" alt="{{nome}}" class="img-circle img-responsive">
-			  					</span>
-			  					<span class="col-sm-11 text-left nome">
-			  						ONG só amor
-			  						<br>
-			  						<small>
-			  							Adicionou um novo evento a 4 horas
-			  						</small>
-			  					</span>
-			  				</div>
-						</h4>
-						<div class="list-group-item-text">
-							<div class="row">
-								<div class="col-sm-11 col-sm-offset-1">
-									<h3>Almoço beneficiente de dias da criança no orfanato</h3>
-								</div>
-								<div class="col-sm-10 col-sm-offset-1">
-									<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia ipsum ut arcu sollicitudin, ultrices mattis risus ultricies. Nunc accumsan, augue id tempor tincidunt, nisl metus accumsan felis, ac pulvinar lectus augue a nisl. Integer laoreet sollicitudin vehicula. Integer venenatis est eu dictum imperdiet. Phasellus vitae ornare neque, vel auctor est. Fusce ante arcu, pretium pulvinar ante a, dignissim sollicitudin justo. Curabitur scelerisque feugiat hendrerit. Etiam tempor consequat sapien, ut semper lacus sagittis vel. Mauris mattis augue vel massa auctor ultricies. Sed pellentesque nisi eu nisi commodo pellentesque. Ut in ornare tortor.
-
-									Donec sodales nulla at lacinia pharetra. Curabitur dictum aliquam enim non posuere. Donec lectus ipsum, tristique lacinia ornare eget, tempor sit amet elit. Ut accumsan orci et dolor commodo commodo. Pellentesque aliquet nec enim ac iaculis. Aenean ullamcorper facilisis volutpat. Nam iaculis elit dui, in aliquam erat eleifend vitae. Mauris at ullamcorper tortor. Nam rhoncus, sem sed dapibus faucibus, sem ante sollicitudin risus, eu iaculis dolor mauris convallis elit. Nullam vitae eleifend nisi. 
-									</p>
-								</div>
-								<p class='text-center'>
-									<button class="btn btn-primary">Ser Gente Boa!</button>
-								</p>
+							<div class="col-sm-10 col-sm-offset-1  text-center">
+								{{description}}
 							</div>
 						</div>
 					</div>
 				</div>
+      {{/each}}
 			</div>
 		</div>
 		<div class='col-sm-2 rewards'>
