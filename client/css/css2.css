@@ -894,3 +894,18 @@ section.profile{
 h3.profile{
   margin:0px !important;
 }
+
+#login-buttons .login-button{
+  background: none;
+  background-color: rgba(255,255,255,0.3);
+  font-size: 2em;
+  -webkit-transitions: 0.3s all ease;
+  -moz-transitions: 0.3s all ease;
+  -ms-transitions: 0.3s all ease;
+  -o-transitions: 0.3s all ease;
+  transitions: 0.3s all ease;
+}
+
+.login-button:hover{
+  background-color:rgba(255,255,255,0.4) !important;
+}
