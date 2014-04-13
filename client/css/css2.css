@@ -1,3 +1,9 @@
+body, html {
+  padding:0px;
+  width: 100%;
+  height: 100%;
+}
+
 h1, h2, h3{
   font-weight: 600;
 }
@@ -306,17 +312,38 @@ section.section-white{
     text-transform: uppercase;
   }
 
-section.welcome{
-  background: url('/images/welcome.jpg') no-repeat;
-  color: #FFF;
-  padding-bottom: 250px;
-  height:100%;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-attachment: fixed; margin-right: 0px;
-
-
-
+.row.caption {
+  position:absolute;
+  bottom:10%;
+  right:15%;
+  left:15%;
 }
 
-  section.welcome h1{
+header.header {
+  display:block;
+  height:100%;
+}
+
+div.welcome{
+  background: url('/images/welcome.jpg') no-repeat;
+  color: #FFF;
+  min-height: 100%;
+  height:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-right: 0px;
+}
+
+.wellcome > .row{
+  position:absolute;
+  right:15%;
+  left:15%;
+}
+
+  div.welcome h1{
     font-size: 55px;
     font-weight: 100;
     margin-top: 40px;
@@ -333,60 +360,61 @@ section.welcome{
     width: 37px;
   }
 
-  section.welcome input,
-  section.welcome .form-control{
+  div.welcome input,
+  div.welcome .form-control{
     border: none;
     height: 60px;
     padding: 15px;
     font-size: 20px;
   }
 
-  section.welcome ::-webkit-input-placeholder { /* WebKit browsers */
+  div.welcome ::-webkit-input-placeholder { /* WebKit browsers */
     color: #999;
     font-weight: 600;
   }
-  section.welcome :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  div.welcome :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: #999;
     font-weight: 600;
   }
-  section.welcome ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  div.welcome ::-moz-placeholder { /* Mozilla Firefox 19+ */
     color: #999;
     font-weight: 600;
   }
-  section.welcome :-ms-input-placeholder { /* Internet Explorer 10+ */
+  div.welcome :-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #999;
     font-weight: 600;
   }
 
-  section.welcome .input-group-addon,
-  section.welcome .btn-default{
-    background: #f1734d;
-    border: none;
+  div.welcome .input-group-addon,
+  div.welcome .btn-default{
+    background: rgba(255, 255, 255, 0.1);
+    border:solid 1px #08FCBE;
     color: #FFF;
     font-size: 18px;
     font-weight: 900;
     padding-left: 30px;
     padding-right: 30px;
     text-transform: uppercase;
+    border-radius: 2px;
   }
 
-  section.welcome .input-group-addon:not(:first-child):not(:last-child){
+  div.welcome .input-group-addon:not(:first-child):not(:last-child){
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
 
-  section.welcome .hidden-lg .btn-default{
+  div.welcome .hidden-lg .btn-default{
     border-radius: 5px;
   }
 
-  section.welcome .help-block {
+  div.welcome .help-block {
     color: #FFF;
     font-weight: 900;
     margin-bottom: 140px;
     margin-top: 10px;
   }
 
-  section.welcome .coffee{
+  div.welcome .coffee{
     background: url('../images/cup.png') no-repeat;
     display: block;
     height: 188px;
@@ -739,9 +767,9 @@ section.footer{
 
   section.footer .btn-default{
     background: none;
-    border: 1px solid #f1734d;
+    border: 1px solid #2EF900;
     border-radius: 3px;
-    color: #f1734d;
+    color: #2EF900;
     font-size: 12px;
     font-weight: bold;
     padding: 7px 14px;
@@ -759,7 +787,7 @@ section.footer{
     }
 
 @media (max-width: 768px){
-  section.welcome h1,
+  div.welcome h1,
   section.how h2,
   section.how h3,
   section.marketplace h3,
