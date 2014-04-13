@@ -967,6 +967,7 @@ h3.profile{
 
 .timeline{
   height:100%;
+  margin:none;
 }
 
 .events-list{
@@ -1004,4 +1005,13 @@ h3.profile{
 
 .margin-nav{
   padding-top:100px;
+}
+
+.rewards{
+	background-color:#93723B;
+	height:100%;
+}
+
+.row.full{
+	height:100%;
 }
