@@ -7,6 +7,7 @@
     "bootstrap-3": {},
     "fast-render": {},
     "roles": {},
-    "moment-with-langs": {}
+    "moment-with-langs": {},
+    "humane": {}
   }
 }
