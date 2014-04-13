@@ -45,7 +45,7 @@ Template['accessOng'].events({
   'submit #formSignUp': function (event, template) {
     event.preventDefault();
     var
-      email    = $('#emailSignUp').val().toLowerCase(),
+      email    = $('#emailSignUp').val(),
       password = $('#passwordSignUp').val()
     ;
     if (isNotEmpty(email)&&
