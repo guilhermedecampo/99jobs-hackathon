@@ -15,5 +15,7 @@ ms-seo
 roles
 moment-with-langs
 robots-txt
-accounts-github
 underscore
+accounts-facebook
+accounts-base
+accounts-ui

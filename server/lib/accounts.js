@@ -1,21 +1,39 @@
-// Fiber = Npm.require('fibers');
+Accounts.onCreateUser(function(options, user) {
+    // We're enforcing at least an empty profile object to avoid needing to check
+    // for its existence later.
+    if (user.services && user.services.facebook) {
+      var accessToken = user.services.facebook.accessToken,
+            result,
+            profile;
 
-// function fiberSendEmail(id) {
-//   Fiber(function () {
-//     Accounts.sendEnrollmentEmail(id);
-//   }).run();
-// }
+        result = Meteor.http.get("https://graph.facebook.com/me", {
+          params: {
+            access_token: accessToken
+          }
+        });
+
+        if (result.error)
+          throw result.error;
+
+        profile = result.data;
+
+        user.profile = profile;
+      } else {
+        user.profile = options.profile ? options.profile : {};
+      }
+
+    return user;
+  });
 
 Meteor.users.after.insert(function (userId, doc) {
-  // if user email is guilherme.decampo@gmail.com role is admin .. else user
-  // if (doc.profile.role === 'admin') {
-  //   Roles.addUsersToRoles(this._id, ['admin']);
-  // } else if (doc.profile.role === 'user')  {
-  //   Roles.addUsersToRoles(this._id, ['user']);
-  //   // fiberSendEmail(this._id);
-  // } else {
-  //   Roles.addUsersToRoles(this._id, ['waitinglist']);
-  // }
+  if (doc.profile.name === 'Guilherme Decampo') {
+    Roles.addUsersToRoles(this._id, ['admin']);
+  } else if (window.location.pathname.split( '/' )[1] === 'accessOng') {
+    Roles.addUsersToRoles(this._id, ['ong']);
+  } else {
+    Roles.addUsersToRoles(this._id, ['user']);
+  }
 });
+
 
 
