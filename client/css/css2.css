@@ -1015,3 +1015,10 @@ h3.profile{
 .row.full{
 	height:100%;
 }
+
+.ong-list .ong{
+	padding-top:10px;
+	display:block;
+	height:100%;
+	border: none;
+}
