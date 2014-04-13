@@ -48,7 +48,7 @@
 		<ul class="cbp_tmtimeline">
 	    <li>
 	        <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>{{date}}</span> <span>{{time}}</span></time>
-	        <div class="cbp_tmicon">	<img src="images/{{linkong}}.png" alt="" class="img-responsive img-circle"></div>
+	        <div class="cbp_tmicon">	<img src="images/{{linkong}}" alt="" class="img-responsive img-circle"></div>
 	        <div class="cbp_tmlabel">
 	            <h3>{{ong}} <small>{{fromNow createDate}}</small>
 	            <br>
@@ -57,10 +57,10 @@
 	            	{{title}}
 	            </h2>
 	            <p>
-	            	{{local}}
+	            	Local: {{local}}
 	            </p>
 	            <p>
-	            	{{date}}
+	            	Data: {{date}}
 	            </p>
 	            <p>
                 {{#if number value='1'}}
@@ -85,7 +85,7 @@
     <h4 class="list-group-item-heading">
       <div class="row">
           <span class="col-sm-1 foto">
-            <img src="images/{{linkong}}.png" alt="{{nome}}" class="img-circle img-responsive">
+            <img src="images/{{linkong}}" alt="{{nome}}" class="img-circle img-responsive">
           </span>
           <span class="col-sm-11 text-left nome">
             {{ong}}

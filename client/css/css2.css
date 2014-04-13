@@ -1,4 +1,4 @@
-body, html {
+ body, html {
   padding:0px;
   margin:0px !important;
   width: 100%;
@@ -1073,6 +1073,7 @@ a.thumbnail{
 	background: none;
 }
 
-.cbp_tmtimeline > li .cbp_tmlabel:after{
-
+.cbp_tmicon img{
+	max-height:40px;
+	width:40px;
 }
