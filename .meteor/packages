@@ -11,11 +11,10 @@ collection-hooks
 sitemaps
 bootstrap-3
 fast-render
-ms-seo
 roles
 moment-with-langs
 robots-txt
 underscore
 accounts-facebook
 accounts-base
-accounts-ui
+accounts-ui-unstyled
