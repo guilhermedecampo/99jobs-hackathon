@@ -8,10 +8,6 @@
       "sitemaps": {},
       "bootstrap-3": {},
       "fast-render": {},
-      "ms-seo": {
-        "git": "https://github.com/guilhermedecampo/ms-seo.git",
-        "branch": "master"
-      },
       "roles": {},
       "moment-with-langs": {}
     },
@@ -43,13 +39,8 @@
       },
       "fast-render": {
         "git": "https://github.com/arunoda/meteor-fast-render.git",
-        "tag": "v0.1.25",
-        "commit": "010c4ee25b48ab6a7373000be48f9cd4a8535880"
-      },
-      "ms-seo": {
-        "git": "https://github.com/guilhermedecampo/ms-seo.git",
-        "branch": "master",
-        "commit": "a96ade97267b317eca0c0f58bd7b1015ec0a5016"
+        "tag": "v0.1.26",
+        "commit": "bfabe15c5acfbdec7c3a815b956bb49c41421ab2"
       },
       "roles": {
         "git": "https://github.com/alanning/meteor-roles.git",
