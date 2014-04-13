@@ -7317,9 +7317,3 @@ label,.control-label,.help-block,.checkbox,.radio {
 .affix {
     position: fixed
 }
-
-.btn.btn-primary{
-	background-color:#14C659;
-	border: 1px solid #3EFABC;
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-}
