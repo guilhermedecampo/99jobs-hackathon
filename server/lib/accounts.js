@@ -28,7 +28,7 @@ Accounts.onCreateUser(function(options, user) {
 Meteor.users.after.insert(function (userId, doc) {
   if (doc.profile.name === 'Guilherme Decampo') {
     Roles.addUsersToRoles(this._id, ['admin']);
-  } else if (window.location.pathname.split( '/' )[1] === 'accessOng') {
+  } else if (doc.services&& doc.services.password) {
     Roles.addUsersToRoles(this._id, ['ong']);
   } else {
     Roles.addUsersToRoles(this._id, ['user']);

@@ -88,3 +88,73 @@ Events.insert({
 
 
 }
+
+Meteor.users.remove({});
+if (Meteor.users.find().count() === 0) {
+ Accounts.createUser({
+   email:   Random.id() +'@gmail.com' ,
+   password: Random.id(),
+   role:'ong',
+   'profile.name': Random.id(),
+   'profile.createDate': new Date(),
+   events: [],
+   people: []
+ });
+
+ Accounts.createUser({
+   email:   Random.id() +'@gmail.com' ,
+   password: Random.id(),
+   role:'ong',
+   'profile.name': Random.id(),
+   'profile.createDate': new Date(),
+   events: [],
+   people: []
+ });
+
+ Accounts.createUser({
+   email:   Random.id() +'@gmail.com' ,
+   password: Random.id(),
+   role:'ong',
+   'profile.name': Random.id(),
+   'profile.createDate': new Date(),
+   events: [],
+   people: []
+ });
+
+ Accounts.createUser({
+   email:   Random.id() +'@gmail.com' ,
+   password: Random.id(),
+   role:'ong',
+   'profile.name': Random.id(),
+   'profile.createDate': new Date(),
+   events: [],
+   people: []
+ });
+
+ Accounts.createUser({
+   email:   Random.id() +'@gmail.com' ,
+   password: Random.id(),
+   role:'ong',
+   'profile.name': Random.id(),
+   'profile.createDate': new Date(),
+   events: [],
+   people: []
+ });
+
+ Accounts.createUser({
+   email:   Random.id() +'@gmail.com' ,
+   password: Random.id(),
+   role:'ong',
+   'profile.name': Random.id(),
+   'profile.createDate': new Date(),
+   events: [],
+   people: []
+ });
+
+
+
+
+
+}
+
+
