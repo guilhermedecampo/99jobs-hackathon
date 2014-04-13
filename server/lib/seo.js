@@ -3,11 +3,11 @@ SeoCollection.remove({});
 
 var seo = [ {
     "route_name" : "index", // the name of the Iron-Router route
-    "title" : "tasdfasdf asdfasdf",
+    "title" : "Quem faz a diferença merece recompensa | Gente Boa",
     "meta" : [
       {
         "key" : "description",
-        "value" : "asdf !"
+        "value" : ""
       }
       // add more meta tags
     ]
