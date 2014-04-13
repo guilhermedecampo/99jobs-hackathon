@@ -28,3 +28,4 @@ UI.registerHelper('fromNow', function(val) {
   return moment(val).fromNow();
 
 });
+

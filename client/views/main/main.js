@@ -1,9 +1,11 @@
 Template.main.rendered = function () {
-  moment.lang('pt-br');
+  return moment().lang('pt-br');
 };
 
-Template.insideMain.rendered = function () {
-  moment.lang('pt-br');
+Template.timeAgo.create = function () {
+  console.log(moment().fromNow());
+  return moment.lang('pt-br');
+
 };
 
 Template['main'].helpers({
