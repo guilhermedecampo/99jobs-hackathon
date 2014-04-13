@@ -13,19 +13,15 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"></a></li>
-            <li><a href="#">Eventos</a></li>
-            <!--
-            <li><a href="#">About</a></li>
-            -->
-            <!-- <li><a href="#jobs">Jobs <span class="alerts">3</span></a></li> -->
-            <li class="highlight"><a href="#events">Entrar como ONG</a></li>
-            <!--
-            <li><a href="#">Sign Up</a></li>
-            -->
-            <!--
-            <li class="orange"><a href="#">Login</a></li>
-            -->
+
+            {{#if currentUser}}
+              <li><a href="#">ONGs</a></li>
+              <li><a href="#">Recompensa</a></li>
+              <li>{{> loginButtons}}</li>
+            {{else}}
+              <li class="highlight"><a href="{{pathFor 'accessOng'}}">Entrar como ONG</a></li>
+            {{/if}}
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>

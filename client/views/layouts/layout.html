@@ -1,5 +1,7 @@
 <template name="layout">
-  {{>header}}
-  {{>yield}}
+  <body>
+    {{> yield region='header'}}
+      {{>yield}}
+  </body>
 </template>
 
