@@ -906,7 +906,8 @@ section.profile{
 
 .profile-menu{
   height:100%;
-  border-right: 5px solid #3EFABC;
+  border-right: 1px solid #3EFABC;
+  border-bottom: 1px solid #3EFABC;
 }
 
 .profile-picture{
@@ -1021,4 +1022,8 @@ h3.profile{
 	display:block;
 	height:100%;
 	border: none;
+}
+
+a.thumbnail{
+	color:black;
 }
