@@ -3,6 +3,7 @@ body, html {
   margin:0px !important;
   width: 100%;
   height: 100%;
+  color:black !important;
 }
 
 h1, h2, h3{
@@ -908,6 +909,7 @@ section.profile{
   height:100%;
   border-right: 1px solid #3EFABC;
   border-bottom: 1px solid #3EFABC;
+  position:fixed;
 }
 
 .profile-picture{
@@ -958,8 +960,12 @@ h3.profile{
   display:block;
   height:100%;
   border: none;
-  border-top:1px solid #14C659;
-  border-bottom:1px solid #14C659;
+  border-top:1px solid #1E7A5C;
+  border-bottom:1px solid #1E7A5C;
+}
+
+hr{
+	border-color:#1E7A5C;
 }
 
 .org:hover{
@@ -1048,19 +1054,25 @@ a.thumbnail{
 	padding-bottom:3px;
 }
 
-/*.login-password-form {
-  display:none;
+
+.cbp_tmicon{
+	content: none !important;
 }
 
-.or {
-  display:none;
+.cbp_tmicon-earth:before{
+	content: none !important;
 }
 
-#login-sign-in-link {
-  display:none;
-}
-.login-close-text {
-  display:none;
+
+.cbp_tmtimeline > li .cbp_tmicon{
+	background: none !important;
+	content: none !important;
 }
 
-*/
+.cbp_tmtimeline:before{
+	background: none;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel:after{
+
+}
