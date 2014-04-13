@@ -391,7 +391,7 @@ div.welcome{
   div.welcome .input-group-addon,
   div.welcome .btn-default{
     background: rgba(255, 255, 255, 0.1);
-    border:solid 1px #08FCBE;
+    border:solid 1px #3EFABC;
     color: #FFF;
     font-size: 18px;
     font-weight: 900;
@@ -875,7 +875,7 @@ section.profile{
 
 .profile-menu{
   height:100%;
-  border-right: 5px solid #08FCBE;
+  border-right: 5px solid #3EFABC;
 }
 
 .profile-picture{
@@ -893,4 +893,78 @@ section.profile{
 
 h3.profile{
   margin:0px !important;
+}
+
+.login-button{
+  background: rgba(255, 255, 255, 0.1);
+  border:solid 1px #3EFABC;
+  color: #FFF;
+  font-size: 2em;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.login-button:hover{
+  background-color:rgba(255,255,255,0.4) !important;
+}
+
+.ong:first-child{
+  padding-top:10px;
+}
+
+.ong{
+  display:block;
+  height:100%;
+  border: none;
+  border-top:1px solid #14C659;
+  border-bottom:1px solid #14C659;
+}
+
+.org:hover{
+  background-color:#14C659;
+}
+
+.timeline{
+  height:100%;
+}
+
+.events-list{
+  padding:0px;
+  margin-top:120px;
+}
+
+.timeline-event{
+  min-height:150px;
+  box-shadow:3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.foto>img{
+  max-height:80px;
+}
+
+.list-group-item{
+  margin-top:1em !important;
+  border:1px solid #14C659;
+}
+
+.list-group-item-text{
+  font-size:1.2em;
+}
+
+.timeline-event h3{
+  margin-top:0px;
+}
+
+@media (max-width: 750px){
+  .profile-menu{
+    display:none;
+  }
 }
