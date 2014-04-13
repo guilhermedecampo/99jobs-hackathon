@@ -3,6 +3,7 @@ body, html {
   margin:0px !important;
   width: 100%;
   height: 100%;
+  color:black !important;
 }
 
 h1, h2, h3{
@@ -968,6 +969,7 @@ h3.profile{
 
 .timeline{
   height:100%;
+  width: 80%;
   margin:none;
 }
 
@@ -1046,4 +1048,26 @@ a.thumbnail{
 .btn-slim{
 	padding-top:3px;
 	padding-bottom:3px;
+}
+
+.cbp_tmicon{
+	content: none !important;
+}
+
+.cbp_tmicon-earth:before{
+	content: none !important;
+}
+
+
+.cbp_tmtimeline > li .cbp_tmicon{
+	background: none !important;
+	content: none !important;
+}
+
+.cbp_tmtimeline:before{
+	background: none;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel:after{
+
 }
