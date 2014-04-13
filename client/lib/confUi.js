@@ -25,7 +25,6 @@ UI.registerHelper('sub', function(val) {
 });
 
 UI.registerHelper('fromNow', function(val) {
-  moment.lang('pt-br');
   return moment(val).fromNow();
 
 });
