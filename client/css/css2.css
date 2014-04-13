@@ -1083,3 +1083,11 @@ a.thumbnail{
 .section-green{
 	height:100%;
 }
+
+.cbp_tmtimeline > li .cbp_tmtime span:first-child{
+	font-size:2em;
+}
+
+.goCadastro{
+	color:black;
+}

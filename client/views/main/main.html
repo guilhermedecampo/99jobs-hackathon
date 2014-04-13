@@ -21,7 +21,7 @@
     {{#each events}}
 		<ul class="cbp_tmtimeline">
 	    <li>
-	        <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>{{date}}</span> <span>{{time}}</span></time>
+	        <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>{{time}}</span> <span>{{date}}</span></time>
 	        <div class="cbp_tmicon">	<img src="images/{{linkong}}" alt="" class="img-responsive img-circle"></div>
 	        <div class="cbp_tmlabel">
 	            <h3>{{ong}} <small>{{fromNow createDate}}</small>
@@ -34,7 +34,7 @@
 	            	Local: {{local}}
 	            </p>
 	            <p>
-	            	Data: {{createDate}}
+	            	Data de criação: {{parsedDate createDate}}
 	            </p>
 	            <p>
               {{>vaiGente}}

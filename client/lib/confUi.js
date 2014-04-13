@@ -31,3 +31,10 @@ UI.registerHelper('fromNow', function(val) {
 
 });
 
+UI.registerHelper('parsedDate', function(val) {
+  return moment(val).lang('pt-br').format('DD/MM/YY');
+
+});
+
+
+
