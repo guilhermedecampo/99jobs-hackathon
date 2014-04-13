@@ -4,3 +4,10 @@
 #2EF900
 #A9E20B
 #FCE90D
+
+//Segunda opção
+#C68214
+#93723B
+#F95600
+#3EFABC
+#14C659
