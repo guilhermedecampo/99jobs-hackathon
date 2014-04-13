@@ -1,0 +1,6 @@
+//Cores
+#08FCBE
+#0BE24B
+#2EF900
+#A9E20B
+#FCE90D
