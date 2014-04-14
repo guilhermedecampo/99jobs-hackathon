@@ -1,3 +1,12 @@
+if (ServiceConfiguration.configurations.find({service: 'facebook'}).count()===0) {
+  ServiceConfiguration.configurations.insert({
+    service: "facebook",
+    appId: "457036687763741",
+    secret: "2d225d1e472e9908c556cbf6bd8725e1"
+  });
+}
+
+
 Meteor.subscribe('events');
 Meteor.subscribe('users');
 

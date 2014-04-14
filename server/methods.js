@@ -8,8 +8,8 @@ Meteor.startup(function () {
       Email.send({
         to: email,
         from: 'gentes@sejagenteboa.com.br',
-        subject: 'Aqui está seu voucher!',
-        text: 'Esse é seu voucher mostre para o caixa.'
+        subject: 'Eai gente boa! Aproveite sua recompensa!',
+        html: Handlebars.templates['email']()
       });
       return true;
     },
